@@ -1,0 +1,186 @@
+body{
+	font-family: "Microsoft YaHei";
+	background-color: #dedede;
+	margin: 0;
+	padding: 0;
+}
+
+/*顶部导航栏样式*/
+div.nav_top{
+	margin: 0;
+	position: relative;
+    background-color: #333;
+    height: 60px;
+}
+
+div.nav_top img{
+	padding-left: 40px;
+	padding-top: 10px; 
+	height: 40px;
+}
+
+div.nav_top ul{
+	position: absolute;
+	margin: 15px;
+	right: 10px;
+	top: 0;
+}
+
+div.nav_top nav ul li{
+	float: left;
+	padding-right: 30px;
+}
+
+div.nav_top nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+/*每一页的背景样式*/
+.page{
+	margin:20px;
+	padding: 10px 30px; 
+	background-color: white;
+	box-shadow: 1px 1px 2px 1px #848484;
+}
+
+/*二级标题样式*/
+h2{
+    font-size: 20px;
+    color:#808080;
+}
+
+/*文章作者和发表时间样式*/
+.auther_time{
+    font-size: 15px;
+    color:#808080;
+}
+
+p{
+	text-indent: 2em;
+}
+
+p a{
+	color: blue;
+}
+
+/*去掉列表前面的点*/
+article div ul li{
+	list-style-type: none;
+}
+
+/*图片样式*/
+.pic{
+	border:1px solid;
+	width: 100px;
+	padding: 3px 10px;
+	margin: 20px 40px;
+	text-align: center;
+}
+
+.pic figcaption{
+	font-size: 13px;
+}
+
+.pic img{
+	padding-top: 8px;
+}
+
+/*列表样式*/
+div.page ol{
+	margin: 20px 10px;
+}
+
+div.page ol li{
+	margin: 5px;
+}
+
+/*表格样式*/
+table{
+	border:1px solid #d8d8d8;
+	text-align: left;
+	width:100%;
+	border-collapse:collapse;
+}
+
+thead{
+	background-color: #333;
+	color:white;
+	font-size: 18px;
+}
+
+thead th,tbody td,tfoot td{
+	padding: 5px;
+}
+
+tfoot{
+	background-color: #d8d8d8;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*侧栏标题样式*/
+aside.page h2{
+	border-left:4px solid #ccc;
+	padding: 10px;
+	font-size: 20px;
+	color: black;
+}
+
+/*表单样式*/
+form{
+	display: table;
+}
+
+div.tableRow{
+	display: table-row;
+}
+
+div.tableRow p{
+	text-indent: 0;
+	display: table-cell;
+	vertical-align: top;
+	padding: 10px;
+	font-size:15px;
+}
+
+div.tableRow p:first-child{
+	text-align: right;
+}
+
+div.oneSection{
+	margin-top: 3px;
+} 
+
+div.tableRow p.remind{
+	padding-top: 0;
+	color: #b5b5b5;
+}
+
+div.tableRow p input[type=email]
+,
+div.tableRow p input[type=password]{
+	height: 20px;
+}
+
+div.tableRow textarea{
+	width: 800px;
+	height: 100px;
+}
+
+/*提交按钮样式*/
+input[type=submit]{
+	background-color: #1553f0;
+	color: white;
+	border: 1px solid #1553f0;
+	font-size: 15px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+div.tableRow #submit{
+	column-span: 2;
+}
+
+
