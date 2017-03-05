@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding: 20px;
+}
+
+div.page{
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid;
+	border-color: #999;
+}
+
+/*设置图片样式*/
+.teamName img
+,.teamImg img{
+	width: 80px;
+	height: 80px;
+}
+
+.teamImg ul li{
+	list-style-type: none;
+}
+
+/*设置第一栏样式*/
+.teamName{
+	background: #fff;
+	border: 1px solid #999;
+	width: 200px;
+	padding: 20px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.teamName img{
+	float: left;
+	margin-right: 20px;
+}
+
+/*先设置最右栏样式*/
+.teamImg{
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #999;
+	width: 120px;
+	padding: 20px;
+	float: right;
+}
+
+.teamImg ul li{
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.teamImg ul li:last-child{
+	margin-bottom: 0;
+}
+
+/*再设置中间栏样式*/
+.teamIntro{
+	background: #fff;
+	border: 1px solid #999;
+	padding: 20px;
+	margin: 0 140px 0 220px;
+}
+
+.teamIntro p{
+	text-indent: 2em;
+}
+
+/*清除浮动*/
+.clearfix{
+	overflow: auto;
+}
