@@ -1,0 +1,643 @@
+*{
+	padding: 0;
+	margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: "Microsoft Yahei";
+	min-width: 1280px;
+}
+
+header{
+	height: 56px;
+	position: relative;
+}
+
+/*新世界logo样式*/
+p.logo:before{
+	content: url(../img/logo.png);
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 11px;
+	margin-bottom: 5px;
+}
+
+p.logo{
+	font-family: "SimHei";
+	font-size: 21px;
+	margin-left: 59px;
+    margin-top: 12px;
+    float: left;
+}
+
+/*导航栏样式*/
+header nav ul{
+    position: absolute;
+    right: 170px;
+}
+
+header nav ul li{
+	float: left;
+	list-style: none;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    padding: 16px;
+}
+
+header nav ul li a:link
+,header nav ul li a:visited{
+	color: #727070;
+	text-decoration: none;
+}
+
+header nav ul li.active a
+,header nav ul li a:hover{ 
+	color: #e74f4d;
+}
+
+.active{
+	border-bottom: 5px #e74f4d solid;
+}
+
+/*登录按钮样式*/
+header div.login span:before{
+	content: url(../img/login.png);
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+header div.login{
+	position: absolute;
+	right: 100px;
+	top: 16px;
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+
+}
+
+header div.login a{
+	color: #e74f4d;
+	text-decoration: none;
+}
+
+/*Time of new life部分*/
+/*背景图样式*/
+section.new_life{
+	height: 691px;
+	background: url(../img/new_life.png) no-repeat;
+	background-size: cover;
+}
+
+section.new_life h1{
+	font-size: 60px;
+	color: #fff;
+    padding-left: 116px;
+    padding-top: 230px;
+    line-height: 60px;
+}
+
+section.new_life .text{
+	font-size: 21px;
+	color: #fff;
+    margin-top: 30px;
+    margin-left: 124px;
+}
+
+section.new_life a.start{
+	text-decoration: none;
+	color: #fff;background-color: #e74f4d;
+	width: 331px;
+	height: 65px;
+	font-size: 30px;
+    display: block;
+    text-align: center;
+    line-height: 65px;
+    margin-left: 126px;
+    margin-top: 66px;
+}
+
+/*4个小图案部分样式*/
+div.list{
+	height: 250px;
+}
+
+div.list ul{
+	text-align: center;
+}
+
+div.list ul li{
+	float: left;
+	list-style: none;
+	width: 25%;
+	padding-top: 45px;
+}
+
+div.list ul li img{
+    margin-bottom: 40px;
+}
+
+div.list ul li p{
+	font-size: 14px;
+	color: #767777;
+	font-family: "SimHei";
+	padding: 0 80px;
+	text-align: center;
+	border-right: 2px #aaaaaa solid;
+	height: 55px;
+}
+
+div.list ul li:last-child p{
+	border: none;
+}
+
+/*一句问句部分的样式*/
+div.question{
+	height: 361px;
+	background-color: #ededec;
+	text-align: center;
+}
+
+.question img{
+    margin-top: 89px;
+}
+
+.question p{
+	font-family: "SimHei";
+	font-size: 54px;
+	text-align: center;
+	color: #a0a1a1;
+	margin-top: 50px;
+}
+
+/*看地图背景的表单部分*/
+section.map{
+    height: 341px;
+    background: url(../img/map.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+section.map h1{
+	font-size: 21px;
+	color: #fff;
+	padding-top: 53px;
+}
+
+section.map hr{
+	border: 2px #fff solid;
+	width: 35px;
+	margin: 15px auto 0;
+}
+
+section.map p{
+    font-size: 12px;
+    color: #fff;
+    margin-top: 25px;	
+}
+
+/*3个下拉框的样式*/
+section.map form{
+	margin-top: 53px;
+}
+
+section.map form select{
+	border: 1px #fff solid;
+	appearance:none;   
+    -moz-appearance:none;   
+    -webkit-appearance:none; /*将默认的select选择框清除*/
+	width: 236px;
+	height: 36px;
+	margin-right: 28px;
+	background: #fff url(../img/arrow.png) scroll no-repeat right 10px center;
+}
+
+select::-ms-expand{
+	display: none;    /*清除IE的默认选择框样式*/
+}
+/*搜索按钮样式*/
+section.map form input[type=submit]{
+	width: 236px;
+	height: 36px;
+	background-color: #be4e48;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+/*4幅画作部分*/
+.activities{
+	height: 605px;
+	background-color: #f8f8f8;
+	text-align: center;
+	padding-top: 101px;
+}
+
+.activities .paintings img{
+	width: 219px;
+	height: 337px;
+}
+
+.activities .paintings{
+	margin: 0 auto;
+	width: 981px;
+}
+
+.activities .paintings div{
+    float: left;
+    margin-right: 35px;
+}
+
+.activities .paintings div:last-child{
+    margin-right: 0;	
+}
+
+/*以下为文字样式*/
+.activities .paintings h1{
+	font-size: 14px;
+	color: #595959;
+}
+
+.activities .paintings p{
+    font-size: 12px;
+    color: #9b9c9c;
+}
+
+.activities .paintings div.hz_act h1{
+	font-size: 23px;
+}
+
+.hz_act p{
+    margin-bottom: 10px;
+}
+
+/*诗歌部分*/
+.suits_poetry{
+	height: 568px;
+}
+
+.suits_poetry .suits{
+/*	background: url(../img/suits.png) no-repeat;
+	background-size: cover;*/
+	width: 66%;
+	height: 568px;
+	float: left;
+}
+
+.suits_poetry .suits img{
+    width: 100%;
+	height: 568px;
+}
+
+/*.suits_poetry .suits p{
+	font-size: 22px;
+	color: #fff;
+	margin-left: ;
+	margin-top: ;
+    line-height: 40px;
+}*/
+
+.suits_poetry .poetry{
+	text-align: center;
+    height: 568px;
+    width: 34%;
+    float: right;
+}
+
+.suits_poetry .poetry h1{
+    margin-top: 165px;
+    font-size: 22px;
+}
+
+.suits_poetry .poetry h1 span{
+	color: #e74f4d;
+}
+
+.suits_poetry .poetry p{
+	width: 60%;
+	margin: 10px auto 0 auto;
+	text-align: left;
+	font-family: "SimSun";
+	font-size: 12px;
+	color: #aaa;
+	line-height: 28px;
+	margin-top: 31px;
+}
+
+.suits_poetry .poetry a{
+    display: block;
+    border:2px #e25c60 solid;
+    text-decoration: none;
+    width: 107px;
+    height: 35px;
+    color: #e25c60;
+    line-height: 35px;
+    margin: 40px  auto 0;
+}
+
+.suits_poetry .poetry ul{
+	margin-top: 20px;
+}
+
+.suits_poetry .poetry ul li{
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #929292;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.suits_poetry .poetry ul li.selected{
+	background-color: #929292;
+}
+
+/*等列车部分*/
+.subway_parts{
+	height: 521px;
+	text-align: center;
+}
+
+/*第一栏*/
+.subway_parts .red{
+	width: 33%;
+	background-color: #e74f4d;
+	height: 521px;
+	float: left;
+	font-family: "SimHei";
+	font-size: 21px;
+	color: #fff;
+}
+
+.subway_parts .red p{
+	margin: 173px auto 0;
+}
+
+.subway_parts .red hr{
+    border: 1.5px solid;
+    width: 35px;
+    margin: 24px auto 0;
+}
+
+.subway_parts .red a{
+    display: block;
+    text-decoration: none;
+    border: 2px #fff solid;
+    width: 170px;
+    height: 44px;
+    color: #fff;
+    margin: 30px auto 0;
+    line-height: 44px;
+}
+/*第二栏*/
+.subway_parts .white{
+    height: 521px;
+    font-family: "SimHei";
+	font-size: 21px;
+
+}
+
+.subway_parts .white p{
+	padding-top: 173px
+}
+
+.subway_parts .white hr{
+    border: 1.5px solid #aaa;
+    width: 35px;
+    margin: 24px auto 0;
+}
+
+.subway_parts .white a{
+    display: block;
+    text-decoration: none;
+    border: 2px #e74f4d solid;
+    width: 170px;
+    height: 44px;
+    margin: 30px auto 0;
+    line-height: 44px;
+    color: #e74f4d
+}
+/*第三栏*/
+.subway_parts .subway{
+	width: 34%;
+	height: 521px;
+	float: right;
+	background: url(../img/subway.png) no-repeat;
+	background-size: cover;
+}
+
+/*报名部分*/
+.signup .signup_text{
+	text-align: center;
+	margin-top: 118px;
+}
+
+.signup .signup_text h1{
+	font-family: "SimHei";
+	font-size: 21px;
+}
+
+.signup .signup_text hr{
+    border: 2px solid #ea6563;
+    width: 35px;
+    margin: 10px auto 0;
+}
+
+.signup .signup_text p{
+	font-size: 12px;
+	color: #aaa;
+	margin-top: 15px;
+}
+
+/*志愿者协议部分*/
+.protocol_form{
+	height: 555px;
+	background-color: #fff;
+}
+
+.protocol_form .protocol{
+    width: 35%;
+    padding-top: 107px;
+    padding-left: 250px;
+    float: left;	
+}
+
+.protocol_form .protocol h1{
+    font-family: "SimHei";
+    font-size: 14px;
+    color: #231815;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.protocol_form .protocol h1:first-child{
+	margin-top: 0;
+}
+
+.protocol_form .protocol .more {
+	margin-bottom: 0;
+
+}
+
+.protocol_form .protocol p{
+	font-family: "SimSun";
+	font-size: 12px;
+	color: #231815;
+	line-height: 20px;
+}
+
+.protocol_form .protocol a {
+    text-decoration: none;
+    font-family: "SimSun";
+    font-size: 12px;
+    color: #231815;
+    margin-left: 75%;
+    margin-bottom: 40px;
+}
+
+.protocol_form .protocol a:before{
+	content: url(../img/arrow_2.png);
+    margin-right: 10px;
+}
+
+/*报名表部分*/
+.protocol_form .form{
+	width: 65%;
+	float: right;
+	padding: 107px 90px;
+}
+
+.protocol_form .form .rows{
+	width: 48%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.protocol_form .form .rows:nth-child(2n){
+	float: right;
+}
+
+.protocol_form .form .rows input{
+	border: 0;
+	height: 40px;
+	width: 100%;
+	background-color: #ededef;
+	padding-left: 15px;
+}
+
+.protocol_form .form textarea{
+	width: 100%;
+	background-color: #ededef;
+	padding-left: 15px;
+	padding-top: 5px;
+	border: 0;
+	height: 121px;
+}
+
+.protocol_form .form input[type=submit]{
+	width: 100%;
+	border: 0;
+	height: 40px;
+	font-size: 15px;
+	background-color: #EDEDEF;
+	cursor: pointer;
+}
+
+/*联系我们*/
+.contact{
+	background-color: #32363e;
+	height: 361px;
+	text-align: center;
+}
+
+.contact h1{
+	font-family: "SimHei";
+	font-size: 21px;
+	color: #fff;
+	padding-top: 92px;
+	padding-bottom: 11px;
+}
+
+.contact p{
+	font-family: "SimSun";
+	font-size: 12px;
+	color: #fff;
+}
+
+.contact .email{
+    margin: 30px auto 37px;
+	width: 40%;
+	height: 41px;
+}
+
+.contact .email ul li{
+	float: left;
+	list-style: none;
+}
+
+.contact .email ul li:first-child{
+	width: 80%;
+}
+
+.contact .email ul li:last-child{
+	width: 20%;
+}
+
+.contact .email input[type=text]{
+	background-color: #fff;
+    padding-left: 10px;
+	height: 41px;
+	border: 0;
+    width: 100%;
+}
+
+.contact .email input[type=submit]{
+	height: 41px;
+	background-color: #6f7278;
+	font-size: 15px;
+	border: 0;
+	color: #fff;
+    width: 100%;
+}
+
+.contact ul.qq{
+
+    display: inline;
+}
+
+.contact ul.qq li{
+	list-style: none;
+	display: inline;
+	margin-right: 27px;
+}
+
+/*页脚*/
+footer{
+	height: 58px;
+	background-color: #2f3038;
+	position: relative;
+}
+
+footer p{
+	color: #fff;
+	font-family: "SimSun";
+	font-size: 12px;
+	position: absolute;
+	left: 100px;
+	top: 31px;
+
+}
+
+footer a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-family: "SimSun";
+	position: absolute;
+	right: 42px;
+	bottom: 16px;
+}
