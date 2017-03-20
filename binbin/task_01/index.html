@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <label>请输入杭州今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button" type="button">确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+(function() {
+  var aqi_input = document.getElementById("aqi-input");
+  var btn = document.getElementById("button"); 
+  var aqi_display = document.getElementById("aqi-display");
+
+  /*给按钮绑定一个点击事件*/ 
+  btn.onclick = showAQI;
+
+  /*给输入框添加键盘事件*/ 
+  aqi_input.onkeyup = function(event) {
+    if(event.keyCode === 13){
+      showAQI();
+    }
+  }
+  
+  /*写一个trim函数，用来去除字符串两端的空格*/
+  String.prototype.trim = function(){  
+    return this.replace(/(^\s*)|(\s*$)/g, "");  
+  }  
+  
+  /*显示输入值的函数*/ 
+  function showAQI(){
+    if(aqi_input.value.trim().length == 0){
+      alert("你输入的是空值！");
+    }
+    else if(isNaN(aqi_input.value)){
+        alert("您输入的不是一个数值！");
+    }
+    else if(aqi_input.value < 0){
+        alert("您输入的不是正数！");    
+    }
+    else{
+      aqi_display.innerHTML = aqi_input.value;
+    }
+  }
+
+})();
+
+</script>
+</body>
+</html>
