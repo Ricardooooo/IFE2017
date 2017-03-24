@@ -27,12 +27,7 @@
       showAQI();
     }
   }
-  
-  /*写一个trim函数，用来去除字符串两端的空格*/
-  String.prototype.trim = function(){  
-    return this.replace(/(^\s*)|(\s*$)/g, "");  
-  }  
-  
+   
   /*显示输入值的函数*/ 
   function showAQI(){
     if(aqi_input.value.trim().length == 0){
