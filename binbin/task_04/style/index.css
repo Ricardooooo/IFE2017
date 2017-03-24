@@ -1,0 +1,9 @@
+#num_wrap div{
+	float: left;
+	color: #fff;
+	background-color: red;
+	list-style: none;
+	margin-left: 5px;
+	margin-top: 10px;
+	padding: 10px 10px;
+}
