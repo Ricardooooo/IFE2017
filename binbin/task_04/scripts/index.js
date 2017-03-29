@@ -68,7 +68,7 @@
 
     /*通过点击元素来删除元素*/
     num_list.addEventListener("click",function(e){
-    	if(e.target.nodeName.toLowerCase()=="div" && e.target.getAttribute("id")!="num_wrap"){
+    	if(e.target.nodeName.toLowerCase()=="div"){
             if(confirm("您确定要删除"+event.target.innerHTML+"吗?"))
     		e.target.remove();
     	}
