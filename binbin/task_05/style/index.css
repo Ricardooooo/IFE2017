@@ -1,0 +1,18 @@
+#num_wrap{
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+#num_wrap li{
+	display: inline-block;
+	color: #fff;
+	background-color: red;
+	list-style: none;
+	margin-left: 5px;
+	padding: 0;
+	width: 20px;
+    vertical-align: bottom;
+    font-size: 10px;
+    text-align: center;
+}
