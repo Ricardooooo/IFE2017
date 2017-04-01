@@ -1,0 +1,54 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.item{
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+#div1,#div2,#div3{
+	border: 1px solid #f00;
+}
+
+#div4{
+	border: 1px solid #00f;
+}
+
+#div1{
+	height: 120px;
+}
+
+#div2{
+	height: 100px;
+}
+
+#div3{
+	height: 40px;
+}
+
+#div4{
+	height: 200px;
+}
+
+/*当屏幕宽度小于640px时的样式*/
+@media (max-width: 640px){
+	.container{
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+
+	#div4{
+		order: -1;
+	}
+
+}
