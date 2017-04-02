@@ -92,12 +92,10 @@
     /*刷新数据*/ 
     function render(match){
         wrap.innerHTML = "";
-        arr = [];
         for(var i=0;i<data.length;i++){
-            arr[i] = data[i];
             var list = document.createElement("div");
             list.setAttribute("id","li-"+i);
-            list.innerHTML = arr[i];
+            list.innerHTML = data[i];
             wrap.appendChild(list);
             /*给匹配到的字符所在的div添加一个类*/ 
             if(match != null && match.length>0){
