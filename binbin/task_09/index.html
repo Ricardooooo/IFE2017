@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>JavaScript和树（三）</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="container">
+    <div class="root">Super
+        <div>Cat
+            <div>Apple
+                <div>Pear</div>
+                <div>Pig</div>
+                <div>Cola</div>
+                <div>Soccor</div>
+            </div>
+            <div>Phone
+
+            </div>
+            <div>
+                <div>Book</div>
+                <div>School</div>
+            </div>
+        </div>
+        <div>Note
+            <div>Human
+                <div>Code</div>
+                <div>Operate</div>
+                <div>Man</div>
+            </div>
+            <div>Program
+                <div>Bement
+                    <div>Cat</div>
+                </div>
+                <div>Glass</div>
+            </div>
+        </div>
+        <div>Fish
+            
+        </div> 
+    </div>
+</div>
+    <div class="btn">
+        <button type="button">深度优先遍历</button>
+        <button type="button">广度优先遍历</button><br>
+        <label for="search_text">请输入想查询的内容：</label>
+        <input type="text" id="search_text">
+        <button type="button">深度优先查询</button>
+        <button type="button">广度优先查询</button><br><br><br>
+        <button type="button">删除选中节点及其子节点</button><br>
+        <label>请先选中一个节点，再输入想添加的内容：</label>
+        <input type="text" id="add">
+        <button type="button">添加到选中节点下</button>
+    </div>
+<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
