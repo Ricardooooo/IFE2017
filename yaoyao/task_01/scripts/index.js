@@ -16,7 +16,7 @@
     }
 
     function validate_form(){
-    	var txt = msg_name.value;
+    	var txt = msg_name.value.trim();
     	if(getStrLen(txt) == 0){
     		tip.innerHTML = "姓名不能为空";
     		tip.style.color = "red";
