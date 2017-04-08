@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft Yahei";
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+	margin: 100px auto;
+	width: 580px;
+    overflow: auto;
+}
+
+.row{
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+.row div{
+	float: left;
+}
+
+.row div:nth-child(1){
+	height: 40px;
+	line-height: 40px;    /*使文字垂直居中*/    
+	width: 20%;
+	text-align: right;
+}
+
+.row div:nth-child(2){
+	width: 80%;
+}
+
+form input[type="text"],
+form input[type="password"]{
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	height: 40px;
+	width: 100%;
+	vertical-align: middle;
+}
+
+form label{
+	margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form .tip{
+	color: #a09e9e;
+	font-size: 15px;
+	font-weight: bold;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+/*按钮的样式*/
+form button{
+	font-size: 20px;
+	color: #fff;
+	background-color: #2494ee;
+	border: 1px solid #0985e8;
+	border-radius: 6px;
+	width: 80px;
+	height: 40px;
+	float: right;
+}
+
+/*鼠标滑过按钮时的样式*/
+form button:hover{
+	background-color: #3d9ce8;
+	cursor: pointer;
+}
+
+/*鼠标按下按钮时的样式*/
+form button:active{
+	background-color: #1c76be;
+	cursor: pointer;
+}
+
