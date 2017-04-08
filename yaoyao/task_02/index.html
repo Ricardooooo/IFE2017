@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>表单（二）多个表单项的动态校验</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <form action="" method="post">
+        <div class="row">
+            <div>
+    	        <label for="msg_name">名称</label>
+    	    </div>
+    	    <div>
+    	        <input type="text" id="msg_name">
+    	        <p class="tip">必填，长度为4~16个字符</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+    	        <label for="msg_password_1">密码</label>
+    	    </div>
+    	    <div>
+    	        <input type="password" id="msg_password_1">
+    	        <p class="tip">必填，8~16个字符,只能填字母或数字</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+    	        <label for="msg_password_2">密码确认</label>
+    	    </div>
+    	    <div>
+    	        <input type="password" id="msg_password_2">
+    	        <p class="tip">再次输入相同密码</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+    	        <label for="msg_email">邮箱</label>
+    	    </div>
+    	    <div>
+    	        <input type="text" id="msg_email">
+    	        <p class="tip">请输入您常用的邮箱</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+    	        <label for="msg_phone">手机</label>
+    	    </div>
+    	    <div>
+    	        <input type="text" id="msg_phone">
+    	        <p class="tip">请输入您的手机号</p>
+            </div>
+        </div>
+        <button type="button" id="btn">提交</button>
+    </form>
+</div>
+<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
