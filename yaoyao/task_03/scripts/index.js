@@ -12,11 +12,11 @@
     /*切换单选框*/ 
     function radioChange(){
         if(inSchoolRadio.checked){
-            inSchoolDiv.className = "inSchool";
-            inSocietyDiv.className = "inSociety hide";
+            inSchoolDiv.className = "";
+            inSocietyDiv.className = "hide";
     	}else{
-    		inSchoolDiv.className = "inSchool hide";
-            inSocietyDiv.className = "inSociety";
+    		inSchoolDiv.className = "hide";
+            inSocietyDiv.className = "";
     	}
     }
     
