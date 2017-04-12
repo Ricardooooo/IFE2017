@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+table{
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table td{
+	box-sizing: border-box;
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+/*给棋盘里的格子添上灰色线框*/
+table tr:nth-child(n+2) td:nth-child(n+2){
+	border: 1px solid #ccc;
+}
+
+/*给棋盘的四边添上黑色线框*/
+table tr:nth-child(2) td:nth-child(n+2){
+	border-top: 1px solid #000;
+}
+
+table tr:nth-child(n+2) td:nth-child(2){
+	border-left: 1px solid #000;
+}
+
+table tr:nth-child(n+2) td:last-child{
+	border-right: 1px solid #000;
+}
+
+table tr:last-child td:nth-child(n+2){
+	border-bottom: 1px solid #000;
+}
+
+.block{
+	width: 50px;
+	height: 50px;
+}
+
+.block-head{
+	height: 10px;
+	background-color: blue;
+}
+
+.block-body{
+	height: 40px;
+	background-color: red;
+}
+
+.guide{
+	width: 550px;
+	margin: 20px auto 0;
+	text-align: center;
+}
+
+.guide input[type=text]{
+	height: 30px;
+	width: 300px;
+}
+
+.guide button{
+	height: 30px;
+    width: 40px;
+}
+
+.guide h1{
+	font-size: 20px;
+}
+
+.guide .detail{
+	width: 270px;
+	margin: 0 auto;
+}
+
+.guide section p{
+	text-align: left;
+	font-size: 16px;
+}
