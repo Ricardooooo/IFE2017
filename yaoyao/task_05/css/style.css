@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+table{
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table td{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+/*给棋盘里的格子添上灰色线框*/
+table tr:nth-child(n+2) td:nth-child(n+2){
+	border: 1px solid #ccc;
+}
+
+/*给棋盘的四边添上黑色线框*/
+table tr:nth-child(2) td:nth-child(n+2){
+	border-top: 1px solid #000;
+}
+
+table tr:nth-child(n+2) td:nth-child(2){
+	border-left: 1px solid #000;
+}
+
+table tr:nth-child(n+2) td:last-child{
+	border-right: 1px solid #000;
+}
+
+table tr:last-child td:nth-child(n+2){
+	border-bottom: 1px solid #000;
+}
+
+.block{
+	width: 50px;
+	height: 50px;
+	transition: all 1s;
+}
+
+.block-head{
+	height: 10px;
+	background-color: #0f42c9;
+}
+
+.block-body{
+	height: 40px;
+	background-color: red;
+}
+
+.buttons{
+	width: 450px;
+	margin: 20px auto 0;
+}
+
+button{
+	width: 90px;
+	height: 40px;
+	background-color: #34bffe;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #18b5fd;
+}
+
+button:hover,
+button:active{
+    background-color: #87d1f2;
+}
+
+.tra-btn,.mov-btn{
+	margin: 20px 0 20px 50px;
+}
+
