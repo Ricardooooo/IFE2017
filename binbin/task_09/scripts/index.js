@@ -73,7 +73,7 @@
                     	nodeList[i].style.backgroundColor = "green";
                     }
                 }else{
-                	if(nodeList[i-1].childNodes[0].nodeValue.replace(/(^\S+)|(\S+$)/,"")==match){
+                	if(nodeList[i-1].childNodes[0].nodeValue.replace(/(^\s+)|(\s+$)/g,"")==match){
                 		nodeList[i-1].style.backgroundColor = "blue";
                 		flag++;
                 		clearInterval(timer);
