@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+table{
+	border-collapse: collapse;
+	border: 2px solid #ccc;
+	margin: 20px auto;
+}
+
+table th,td{
+	width: 120px;
+	height: 60px;
+	text-align: center;
+}
+
+table th{
+	background-color: #32baf8;
+	position: relative;
+}
+
+.arrowUp{
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 16px solid #fff;
+	position: absolute;
+	top: 10px;
+	left: 90px;
+}
+
+.arrowUp:hover{
+	cursor: pointer;
+}
+
+.arrowDown{
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid #fff;
+	position: absolute;
+	top: 35px;
+	left: 90px;
+}
+
+.arrowDown:hover{
+	cursor: pointer;
+}
