@@ -40,7 +40,6 @@ function traBot(){
 
 function movLef(){
 	block.style.transform = "rotate(-90deg)";
-	console.log(block.style.animationName);
 	traLef();
 }
 
