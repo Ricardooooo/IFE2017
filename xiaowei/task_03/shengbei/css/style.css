@@ -58,7 +58,7 @@ div.wrap{
 	margin-right: 20px;
 }
 
-/*先设置最右栏样式*/
+/*设置最右栏样式*/
 .right{
 	box-sizing: border-box;
 	background: #fff;
