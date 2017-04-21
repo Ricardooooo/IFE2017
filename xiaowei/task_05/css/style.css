@@ -6,6 +6,10 @@ body{
 	min-width: 750px;
 }
 
+.container{
+	position: relative;
+}
+
 /*顶部导航栏样式*/
 div.nav_top{
 	margin: 0;
@@ -46,6 +50,13 @@ div.nav_top nav ul li a{
 	box-shadow: 1px 1px 2px 1px #848484;
 }
 
+
+
+/*使文章一直保持在左侧*/
+article.page{
+    margin-right: 450px;
+}
+
 /*二级标题样式*/
 h2{
     font-size: 20px;
@@ -66,12 +77,7 @@ p a{
 	color: blue;
 }
 
-/*去掉列表前面的点*/
-article div ul li{
-	list-style-type: none;
-}
-
-/*图片样式*/
+/*一系列川普图片的样式*/
 .pic{
 	width: 120px;
 	height: 120px;
@@ -97,8 +103,8 @@ div.page ol{
 	margin: 20px 10px;
 }
 
-div.page ol li{
-	margin: 5px;
+div.page ul li{
+	list-style-type: none;
 }
 
 /*表格样式*/
@@ -125,51 +131,62 @@ tfoot{
 	font-weight: bold;
 }
 
-/*侧栏标题样式*/
+/*侧栏样式*/
+aside{
+    width: 350px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+aside.page{
+	margin-top: 0;
+}
+
 aside.page h2{
 	border-left:4px solid #ccc;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 18px;
 	color: black;
 }
 
-/*表单样式*/
-form table{
-	border:none;
-	margin-left: 0;
-}
-
-form table tr>td{
-	width: 35%;
+form .table{
 	font-size: 14px;
-	padding: 5px 10px;
-	vertical-align: top; 
 }
 
-form table tr td.remind{
-	color: #959494;
-	padding-top: 0;
-	padding-bottom: 15px;
-}
-
-form table tr textarea{
-	width: 70%;
-	height: 100px;
-}
-
-form table tr td:first-child{
+form .row .td:nth-child(2n+1){
+	float: left;
+	width: 100px;
 	text-align: right;
+	margin-right: 20px;
 }
 
-/*使侧栏浮动在右侧*/
-aside{
-	float: right;
-	width: 350px;
+form .remind{
+	margin-top: 10px;
+	margin-left: 120px;
+	color: #8a8a8a;
 }
 
-/*提交按钮样式*/
+form input[type=email],
+form input[type=password]{
+	width: 150px;
+}
+
+.email_part,.pass_part{
+	margin-bottom: 20px;
+}
+
+.personInfo .row{
+    margin-bottom: 10px;
+}
+textarea{
+	width: 60%;
+	height: 80px;
+}
+
+/*侧栏提交按钮样式*/
 input[type=submit]{
-    padding:1px 5px; 
+    padding-right: 5px; 
     background-color: #1553f0;
     color: white;
 	border: 1px solid #1553f0;
@@ -187,10 +204,4 @@ footer{
 	text-align: center;
 	font-size: 13px;
 }
-
-/*使文章一直保持在左侧*/
-article.page{
-    margin-right: 450px;
-}
-
 
