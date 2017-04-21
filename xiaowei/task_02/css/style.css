@@ -14,8 +14,8 @@ div.nav_top{
 }
 
 div.nav_top img{
-	padding-left: 40px;
-	padding-top: 10px; 
+	margin-left: 40px;
+	margin-top: 10px; 
 	height: 40px;
 }
 
@@ -28,7 +28,7 @@ div.nav_top ul{
 
 div.nav_top nav ul li{
 	float: left;
-	padding-right: 30px;
+	margin-left: 30px;
 }
 
 div.nav_top nav ul li a{
@@ -40,7 +40,7 @@ div.nav_top nav ul li a{
 /*每一页的背景样式*/
 .page{
 	margin:20px;
-	padding: 10px 30px; 
+	padding: 20px 30px; 
 	background-color: white;
 	box-shadow: 1px 1px 2px 1px #848484;
 }
@@ -57,11 +57,11 @@ h2{
     color:#808080;
 }
 
-p{
+article p{
 	text-indent: 2em;
 }
 
-p a{
+article p a{
 	color: blue;
 }
 
@@ -129,34 +129,40 @@ aside.page h2{
 }
 
 /*表单样式*/
-form table{
-	border:none;
+form .table{
 	margin-left: 15%;
+	font-size: 16px;
 }
 
-form table tr td{
-	width: 20px;
-	font-size: 14px;
-	padding: 5px 10px;
-	vertical-align: top; 
-}
-
-form table tr td.remind{
-	color: #959494;
-	padding-top: 0;
-	padding-bottom: 15px;
-}
-
-form table tr textarea{
-	width: 70%;
-	height: 100px;
-}
-
-form table tr td:first-child{
+form .row .td:nth-child(2n+1){
+	float: left;
+	width: 200px;
 	text-align: right;
+	margin-right: 20px;
 }
 
+form .remind{
+	margin-top: 10px;
+	margin-left: 220px;
+	color: #8a8a8a;
+}
 
+form input[type=email],
+form input[type=password]{
+	width: 200px;
+}
+
+.email_part,.pass_part{
+	margin-bottom: 20px;
+}
+
+.personInfo .row{
+    margin-bottom: 10px;
+}
+textarea{
+	width: 60%;
+	height: 80px;
+}
 
 /*提交按钮样式*/
 input[type=submit]{
