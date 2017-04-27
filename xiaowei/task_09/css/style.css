@@ -1,0 +1,1065 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "SimSun";
+}
+
+body{
+	min-width: 1280px;
+}
+
+/*头部样式*/
+header{
+	height: 56px;
+	background-color: #2189bf;
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+	top: 11px;
+	left: 51px;
+}
+
+.search_bar{
+	position: absolute;
+    right: 156px;
+    top: 14px;
+}
+
+header input[type=text]{
+	width: 313px;
+	height: 28px;
+	border-radius: 14px;
+	padding-left: 40px;
+	outline: none;
+	background: #fff url(../image/glass.png) no-repeat 20px 5px;
+	line-height: 28px;
+	border: 0;
+}
+
+header .login{
+    position: absolute;
+    top: 14px;
+    right: 100px;
+}
+
+header .login a{
+	color: #fff;
+	text-decoration: none;
+	background: url(../image/login.png) no-repeat 0 6px;
+	padding-left: 17px;
+	display: block;
+	height: 28px;
+	line-height: 28px;
+}
+
+.wrap{
+	width: 1280px;
+	margin: 0 auto;
+	background: #eeeeed;
+}
+/*左边侧栏样式*/
+.left_bar{
+    width: 260px;
+    float: left;
+    background-color: #2a2e3d;
+    height: 1213px;
+}
+
+/*头像和用户名样式*/
+.profile{
+	height: 152px;
+	position: relative;
+}
+
+.profile .avatar_wrap{
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	border: 1px #fff solid;
+	position: absolute;
+	top: 18px;
+	left: 46px;
+}
+
+.profile .avatar_wrap:hover{
+	cursor: pointer;
+}
+
+.profile .avatar_wrap .avatar{
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	background: #bababe;
+	margin: 5px; 
+}
+
+.profile .username{
+	position: absolute;
+	top: 41px;
+	left: 122px;
+}
+
+.profile .username:hover{
+	cursor: pointer;
+}
+
+.profile .username span{
+	color: #fff;
+	font-size: 16px;
+	font-family: "SimHei";
+}
+
+/*收藏、粉丝样式*/
+.collect_fans{
+    padding-top: 100px;
+    padding-left: 64px;
+}
+
+.collect_fans li{
+    float: left;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.collect_fans li:first-child{
+    border-right: 2px #323647 solid;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.collect_fans span{
+	display: block;
+	color: #6e8095;
+}
+
+.collect_fans span:hover{
+	cursor: pointer;
+}
+
+.collect_fans li span:nth-child(1){
+	font-size: 16px;
+    font-family: "SimHei";
+}
+
+/*列表样式*/
+.menu li{
+	min-height: 30px;
+	line-height: 30px;
+	font-family: "SimHei";
+    color: #6e8096;
+    list-style: none;
+}
+
+.menu li:hover{
+	cursor: pointer;
+	background-color: #383d4e;
+}
+
+.menu > li{
+	min-height: 36px;
+	line-height: 36px;
+	padding-bottom: 5px;
+	padding-left: 46px;
+}
+
+.menu span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+}
+
+.menu li.cur{
+	color: #fff;
+	background-color: #383d4e;
+}
+
+.menu > li > ul li{
+	margin-left: 25px;
+}
+
+span.arrow{
+	background: url(../image/arrow.png) no-repeat;
+}
+
+span.arrow_cur{
+	background: url(../image/arrow_cur.png) no-repeat 0 2px;
+}
+
+span.file_close{
+	background: url(../image/file_close.png) no-repeat;
+}
+
+span.file_cur{
+	background: url(../image/file_cur.png) no-repeat;
+}
+
+span.doc_close{
+	background: url(../image/doc_close.png) no-repeat;
+}
+
+span.doc_cur{
+	background: url(../image/doc_cur.png) no-repeat;
+}
+
+.menu .report:before{
+	content: url(../image/report.png);
+	padding-right: 13px;
+}
+
+.menu .collection:before{
+	content: url(../image/star.png);
+	padding-right: 13px;
+}
+
+.menu .share:before{
+	content: url(../image/share.png);
+	padding-right: 13px;
+}
+
+.menu .gallery:before{
+	content: url(../image/star.png);
+	padding-right: 13px;
+}
+
+.menu .growth:before{
+	content: url(../image/star.png);
+	padding-right: 13px;
+}
+
+.menu .user_info:before{
+	content: url(../image/user_info.png);
+	padding-right: 13px;
+}
+
+/*主体部分*/
+.main{
+	width: 1020px;
+	background-color: #eeeeed;
+    float: right;
+    height: 1213px;
+}
+
+/*导航栏样式*/
+nav{
+	background: #fff;
+	height: 31px;
+	line-height: 31px;
+	padding-left: 31px;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-family: "SimHei";
+	color: #aaa;
+}
+
+nav ul li:last-child a{
+	color: #6898c2;
+}
+
+nav ul li a:hover{
+	color: #6898c2;
+}
+
+.main_content{
+	padding-top: 19px;
+	width: 891px;
+	margin: 0 auto;
+}
+
+/*搜索区域样式*/
+.query_container{
+	width: 891px;
+	height: 86px;
+	background-color: #fff;
+}
+
+.query_container label{
+    color: #aaa;
+    font-family: "SimHei";
+    margin-right: 8px;
+}
+
+.query_container select{
+	padding-left: 8px;
+	height: 26px;
+	border-color: #aaa;
+	appearance:none;   
+    -moz-appearance:none;   
+    -webkit-appearance:none; /*将默认的select选择框清除*/
+	background: url(../image/black_arrow.png) no-repeat right 5px center;
+}
+
+select::-ms-expand{
+	display: none;    /*清除IE的默认选择框样式*/
+}
+
+.query_container select.width71{
+	width: 71px;
+}
+
+.query_container select.width121{
+	width: 121px;
+}
+
+/*查询项样式*/
+.query_item{
+	float: left;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.query_item select{
+	background: url(../image/blue_arrow.png) no-repeat right 10px center;
+}
+
+/*买方、卖方样式*/
+.query_buyer{
+	float: left;
+	margin-top: 15px;
+	margin-left: 36px;
+}
+
+.row_02{
+	margin-top: 6px;
+}
+
+.change:hover{
+	cursor: pointer;
+}
+
+.change{
+    float: left;
+    background: url(../image/change.png) no-repeat;
+    display: block;
+    width: 28px;
+    height: 38px;
+    margin-top: 27px;
+    margin-left: 2px;
+    padding-left: 13px;
+    padding-top: 12px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+/*日期等搜索条件样式*/
+.query_date{
+	margin-top: 15px;
+	float: left;
+}
+
+.query_date div select{
+	margin-right: 10px;
+}
+
+/*搜索按钮样式*/
+button.query{
+	display: block;
+	height: 26px;
+	width: 51px;
+	
+	background-color: #388ac1;
+	color: #fff;
+	border: 0;
+	border-radius: 2px;
+	font-family: "SimHei";
+}
+
+button.query:hover{
+	cursor: pointer;
+}
+
+.query_container button{
+	float: left;
+    margin-top: 31px;
+	margin-left: 19px;
+}
+
+/*一排价格的样式*/
+.price_container{
+	margin-top: 9px;
+	width: 891px;
+}
+
+.price_l,.price_r{
+	width: 31px;
+	height: 65px;
+	float: left;
+}
+
+.price_l:hover,
+.price_r:hover{
+	cursor: pointer;
+}
+
+.price_l{
+	background: #fff url(../image/price_arrow_left.png) no-repeat center;
+	margin-right: 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.price_r{
+	background: #fff url(../image/price_arrow_right.png) no-repeat center;
+	margin: 0 4px 0 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.box_border{
+	border: 1px #cacdd1 solid;
+	border-right-color: #eeeeed;
+	border-bottom-color: #eeeeed;
+}
+
+.price_list{
+	text-align: center;
+}
+
+.price_list li{
+	width: 111px;
+	height: 65px;
+	float: left;
+	background-color: #fff;
+	list-style: none;
+	margin: 0 2px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+.price_list li:hover{
+	cursor: pointer;
+}
+
+.price_list li time{
+	display: block;
+	font-family: "Microsoft Yahei";
+	margin-top: 15px;
+}
+
+.price_list li:hover:after,
+.price_list li.price_cur:after{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 111px;
+	height: 4px;
+	background-color: #4388c8;
+}
+
+.price_num{
+    font-family: "Microsoft Yahei";
+	font-size: 21px;
+	color: #ec6500;
+}
+
+.price_num .yuan{
+	font-family: "Microsoft Yahei";
+	font-size: 21px;
+	color: #aaa;
+}
+
+.history{
+	float: left;
+	width: 131px;
+	height: 65px;
+	background: #fff url(../image/history.png) no-repeat 19px 17px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.history span{
+	position: absolute;
+    top: 28px;
+    left: 62px;
+}
+
+.history:hover{
+	cursor: pointer;
+}
+
+/*成交量的样式*/
+.volume{
+	margin-top: 22px;
+	width: 891px;
+}
+
+.volume h1{
+	font-family: "Microsoft Yahei";
+	color: #323333;
+}
+
+.volume_list{
+	margin-top: 6px;
+}
+
+.volume li{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	list-style: none;
+	width: 201px;
+	height: 71px;
+	background-color: #fff;
+	margin-right: 29px;
+	position: relative;
+	border: 1px solid #cacdd1;
+	border-left: 4px solid;
+}
+
+.volume li:last-child{
+	margin-right: 0;
+}
+
+.volume_list p{
+	font-family: "SimHei";
+	color: #323333;
+	margin-top: 22px;
+	margin-left: 12px;
+}
+
+.volume_list span{
+	font-family: "SimHei";
+	color: #aaa;
+	font-size: 10px;
+	margin-top: 14px;
+	margin-left: 12px;
+}
+
+.volume_list .rectangle{
+	width: 61px;
+	height: 47px;
+	position: absolute;
+	top: 12px;
+	left: 125px;
+}
+
+.volume_list li:nth-child(1){
+	border-left-color: #43b29d;
+}
+
+.volume_list li:nth-child(2){
+	border-left-color: #388ac1;
+}
+
+.volume_list li:nth-child(3){
+	border-left-color: #d04a36;
+}
+
+.volume_list li:nth-child(4){
+	border-left-color: #e2cd47;
+}
+
+.volume_list li:nth-child(1) .rectangle{
+	background-color: #43b29d;
+}
+
+.volume_list li:nth-child(2) .rectangle{
+	background-color: #388ac1;
+}
+
+.volume_list li:nth-child(3) .rectangle{
+	background-color: #d04a36;
+}
+
+.volume_list li:nth-child(4) .rectangle{
+	background-color: #e2cd47;
+}
+
+/*两块项目的样式*/
+.project{
+	margin-top: 14px;
+	width: 891px;
+}
+
+.project section.project_tab{
+	width: 531px;
+	height: 357px;
+	float: left;
+}
+
+ul.project_tab_menu{
+	margin-top: 13px;
+	margin-left: 20px;
+	position: relative;
+	list-style: none;
+}
+
+ul.project_tab_menu label{
+	cursor: pointer;
+	width: 86px;
+	height: 27px;
+	display: block;
+	text-align: center;
+	line-height: 27px;
+	background-color: #ededf0;
+	border: 1px solid #ededf0;
+	border-radius: 5px 5px 0 0;
+}
+
+ul.project_tab_menu li{
+	float: left;
+	margin-right: 3px;
+}
+
+ul.project_tab_menu input,
+ul.project_tab_menu div{
+	display: none;
+}
+
+ul.project_tab_menu [id^='tab']:checked ~ [id^='tab_menu']{
+	display: block;
+	border: 1px solid #cacbcb;
+	border-radius: 0 5px 5px 5px;
+	position: absolute;
+	left: 0;
+	top: 27px;
+	width: 491px;
+	height: 252px;
+}
+
+/*设置表格的样式*/
+ul.project_tab_menu table{
+    border-collapse: collapse;
+    margin-left: 39px;
+    margin-top: 28px; 
+}
+
+ul.project_tab_menu table td{
+	width: 102px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	border-color: #ddd;
+	color: #535353;
+	font-family: "SimHei";
+}
+
+ul.project_tab_menu table td:hover{
+	background-color: #f4f6f7;
+}
+
+/*设置被选中的那个label的样式*/
+ul.project_tab_menu [id^='tab']:checked~label{
+	position: relative;
+	z-index: 1;       /*这样可以用白色覆盖掉下面那个元素的border-top*/
+	border: 1px solid #cacbcb;
+	border-bottom: none;
+	background-color: #fff;
+}
+
+/*项目内容部分*/
+.project_content{
+	width: 351px;
+	height: 357px;
+	float: right;
+}
+
+.detail_content{
+	margin-left: 35px;
+}
+
+.detail_content .caption{
+	padding-left: 17px;
+	height: 58px;
+}
+
+.detail_content .caption h3{
+	padding-top: 13px;
+}
+
+.detail_content .price_charge{
+	border-bottom: 1px solid #dddedd;
+}
+
+.detail_content .price_charge div{
+	padding-left: 17px;
+	height: 41px;
+}
+
+.detail_content .price_charge div:first-child{
+	padding-top: 2px;
+	border-right: 1px solid #dddedd;
+	border-top: 1px solid #dddedd;
+	width: 73px;
+}
+
+.detail_content .price_charge div:last-child{
+	padding-top: 2px;
+	width: 174px;
+	border-top: 1px solid #dddedd;
+}
+
+.detail_content .price_charge div{
+	float: left;
+}
+
+.detail_content .description{
+	padding-top: 2px;
+	height: 143px;
+	padding-left: 17px;
+	border-bottom: 1px solid #dddedd;
+	width: 264px;
+}
+
+.detail_content .query_part{
+	width: 281px;
+}
+
+.detail_content .protocol{
+	float: left;
+	margin-top: 8px;
+	margin-left: 2px;
+}
+
+.detail_content label{
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #c3c2c2;
+	font-weight: bold;
+}
+
+.detail_content input[type="checkbox"]{
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+}
+
+.detail_content button{
+	float: right;
+	margin-top: 4px;
+}
+
+/*日历部分的样式*/
+.calendar_ranking{
+	margin-top: 9px;
+	width: 891px;
+}
+
+.calendar_container{
+	width: 351px;
+	height: 357px;
+	float: left;
+}
+
+.calendar_container select{
+	appearance:none;   
+    -moz-appearance:none;   
+    -webkit-appearance:none; /*将默认的select选择框清除*/
+}
+
+select::-ms-expand{
+	display: none;    /*清除IE的默认选择框样式*/
+}
+
+.calendar_container .year{
+	padding-left: 4px;
+    height: 23px;
+    width: 62px;
+    border: 2px solid #cbcbcb;
+    font-family: "SimHei";
+  	color: #535353;
+  	background: url(../image/arrow_date.png) no-repeat right 5px center;
+}
+
+.calendar_container .month{
+ 	height: 23px;
+ 	width: 86px;
+ 	border: 2px solid #cbcbcb;
+ 	font-family: "SimHei";
+  	color: #535353;
+  	padding-left: 20px;
+  	background: url(../image/arrow_date.png) no-repeat right 5px center;
+}
+
+.calendar_container .mark_date{
+	padding-left: 4px;
+ 	height: 23px;
+ 	width: 76px;
+ 	border: 2px solid #cbcbcb;
+ 	font-family: "SimHei";
+  	color: #535353;
+  	background: url(../image/arrow_date.png) no-repeat right 5px center;
+}
+
+.calendar_container .back_tody{
+ 	height: 23px;
+ 	width: 65px;
+ 	border: 2px solid #cbcbcb;
+ 	font-family: "SimHei";
+  	color: #535353;
+}
+
+.calendar_container .back_tody:hover{
+	cursor: pointer;
+}
+
+.calendar_container .select_date{
+  	margin-left: 22px;
+  	margin-top: 10px;
+}
+
+button.back_tody{
+	background-color: #fff;
+}
+
+.calendar_content{
+	width: 311px;
+	margin-left: 20px;
+	margin-top: 9px;
+}
+
+.calendar_content .week{
+	border-top: 2px solid #a9cfec;
+	border-bottom: 2px solid #e1e1e1;
+	margin-bottom: 2px;
+}
+
+.calendar_content .week div{
+    float: left;
+    height: 31px;
+	line-height: 31px;
+	width: 42px;
+	font-family: "SimHei";
+    color: #535353;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.calendar_content .day div{
+	float: left;
+    width: 42px;
+    height: 42px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top: 9px;
+}
+
+.calendar_content .day div span{
+	display: block;
+	font-size: 12px;
+	font-family: "SimHei";
+	color: #323333;
+}
+
+.calendar_content .day div span.red{
+	color: #c9161d;
+}
+
+.calendar_content .day div.today{
+	border: 2px solid #f7d564;
+	padding-top: 7px;
+}
+
+/*汽车行业品牌榜*/
+.ranking_container{
+    height: 357px;
+    width: 531px;
+    float: right;
+}
+
+.ranking_container table{
+	border-collapse: collapse;
+	border: 1px solid #c4c4c5;
+	margin-top: 18px;
+	margin-left: 40px;
+	border-bottom: 0;
+}
+
+.ranking_container table tr:hover{
+	cursor: pointer;
+	background-color: #f4f5f6;
+}
+
+.ranking_container table tr:last-child td{
+	border-bottom: 0;
+}
+
+.ranking_container th{
+	font-size: 13px;
+	font-family: "SimHei";
+	color: #231815;
+}
+
+.ranking_container td{
+	font-size: 12px;
+	font-family: "SimHei";
+	color: #323333;
+}
+
+.ranking_container table tr th,
+.ranking_container table tr td{
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.ranking_container table tr th:nth-child(1),
+.ranking_container table tr td:nth-child(1){
+	width: 65px;
+}
+
+.ranking_container table tr th:nth-child(2),
+.ranking_container table tr td:nth-child(2){
+	width: 80px;
+}
+
+.ranking_container table tr th:nth-child(3),
+.ranking_container table tr td:nth-child(3){
+	width: 306px;
+}
+
+.ranking_container table tr th:nth-child(3){
+	padding-left: 22px;
+	text-align: left; 
+}
+
+.ranking_container table tr td:nth-child(3){
+	padding-left: 26px;
+	text-align: left;
+	position: relative; 
+}
+
+.progress_bar{
+	display: inline-block;
+	width: 200px;
+	height: 4px;
+	background-color: #dddddd;
+	position: absolute;
+	top: 11px;
+	right: 40px;
+
+}
+
+.progress_bar .w80_perc{
+	width: 80%;
+	height: 4px;
+	background-color: #ed6e52;
+}
+
+.progress_bar .w70_perc{
+	width: 70%;
+	height: 4px;
+	background-color: #ef8150;
+}
+
+.progress_bar .w60_perc{
+	width: 60%;
+	height: 4px;
+	background-color: #f29f4f;
+}
+
+.progress_bar .w55_perc{
+	width: 55%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w50_perc{
+	width: 50%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w45_perc{
+	width: 45%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w40_perc{
+	width: 40%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w38_perc{
+	width: 38%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w35_perc{
+	width: 35%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w33_perc{
+	width: 33%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+.progress_bar .w31_perc{
+	width: 31%;
+	height: 4px;
+	background-color: #7fcbf0;
+}
+
+/*
+*重用的样式部分*
+*/
+
+/*那4个section的外框样式*/
+.container{                 
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ced1d4;
+}
+
+h3.tt{
+	height: 41px;
+	border-bottom: 1px solid #e7e8eb;
+	background-color: #f4f5f6;
+	line-height: 41px;
+	padding-left: 21px;
+	color: #aaa;
+	font-family: "SimHei";
+	font-size: 12px;
+}
+
+/*.project_content里标题的样式*/
+.caption_font{
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #c3c2c2;
+}
+
+/*.project_content里内容的样式*/
+.content_font{
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #535353;
+	margin-top: 6px;
+}
+
+/*清除浮动*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
