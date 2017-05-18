@@ -1,5 +1,6 @@
 # 任务一：零基础HTML编码
-## demo在线预览地址：https://ricardooooo.github.io/IFE2017/xiaowei/task_01/index.html
+### demo在线预览地址:<br>
+https://ricardooooo.github.io/IFE2017/xiaowei/task_01/index.html
 ### 任务目的
 * 了解HTML的定义、概念、发展简史
 * 掌握常用HTML标签的含义、用法
