@@ -1,4 +1,4 @@
-# 任务一：零基础HTML编码
+# 小薇学院任务一：零基础HTML编码
 ### Ricardooooo的demo在线预览地址:
 https://ricardooooo.github.io/IFE2017/xiaowei/task_01/index.html
 ### 任务目的
