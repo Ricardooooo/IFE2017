@@ -3,8 +3,8 @@
 https://ricardooooo.github.io/IFE2017/xiaowei/task_02/index.html
 ### 任务目的
 * 针对设计稿样式进行合理的HTML架构，包括以下但不限于：
-  * 能够基于设计稿来合理规划HTML文档结构
-  * 理解语义化，合理地使用HTML标签来构建页面
+ * 能够基于设计稿来合理规划HTML文档结构
+ * 理解语义化，合理地使用HTML标签来构建页面
   
 * 掌握基本的CSS编码，包括以下但不限于：
 ```
