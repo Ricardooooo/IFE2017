@@ -1,6 +1,6 @@
 # 小薇学院任务四：定位和居中问题
 ### Ricardooooo的demo在线预览地址:
-https://ricardooooo.github.io/IFE2017/xiaowei/task_03/index.html
+https://ricardooooo.github.io/IFE2017/xiaowei/task_04/index.html
 
 ### 任务目标
 * 实践HTML/CSS布局方式
