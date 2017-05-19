@@ -1,6 +1,7 @@
 # 小薇学院任务二：零基础HTML及CSS编码（一）
 ### Ricardooooo的demo在线预览地址:
 https://ricardooooo.github.io/IFE2017/xiaowei/task_02/index.html
+
 ### 任务目的
 * 针对设计稿样式进行合理的HTML架构，包括以下但不限于：
    ```
@@ -18,6 +19,7 @@ https://ricardooooo.github.io/IFE2017/xiaowei/task_02/index.html
 
 ### 任务描述
 * 基于第一个任务“零基础HTML编码”的代码，参考 [示例图（点击查看）](http://7xrp04.com1.z0.glb.clouddn.com/task_1_2_1.jpg)，在步骤一的代码基础上增加CSS样式代码的编写
+
 ### 任务注意事项
 * 只需要完成HTML，CSS代码编写，不需要写JavaScript
 * 示例图仅为参考，不需要完全实现一致，其中的图片、文案均可自行设定
