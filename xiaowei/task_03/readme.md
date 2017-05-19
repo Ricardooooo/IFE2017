@@ -1,4 +1,4 @@
-# 小薇学院任务三：零基础HTML及CSS编码（一）
+# 小薇学院任务三：三栏式布局
 ### Ricardooooo的demo在线预览地址:
 https://ricardooooo.github.io/IFE2017/xiaowei/task_03/index.html
 
